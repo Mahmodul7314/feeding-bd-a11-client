@@ -18,15 +18,39 @@ const quantity = form.quantity.value;
 const pickup = form.pickup.value;
 const date = form.date.value;
 const note = form.note.value;
+const status = form.status.value
 const donatorImage = form.donatorImage.value;
 const donatorName = form.donatorName.value;
 const donatorEmail = form.donatorEmail.value;
 
 
 
-const food ={foodName,image,quantity,pickup,date,note,donatorImage,donatorName,donatorEmail}
-console.log(food);
+const food ={foodName,
+    image,
+    quantity,
+    pickup,
+    date,
+    note,
+    status,
+    donatorImage,
+    donatorName,
+    donatorEmail}
 
+console.log(food);
+fetch('http://localhost:3000/foods',{
+    method:'POST',
+    headers:{
+        'content-type': 'application/json'
+    },
+    body:JSON.stringify(food)
+    })
+    .then(res=> res.json())
+    .then(data=>{
+        console.log(data);
+        if(data.insertedId){
+            alert('service book successfully')
+        }
+    })
 
 
 
@@ -117,13 +141,21 @@ console.log(food);
     </div>
   
            {/*  Donator Email row */}
-        <div className="mb-8 ">
+        <div className="md:flex mb-8 ">
            <div className="form-control md:w-1/2">
            <label className="label">
                <span className="label-text">Email</span>
            </label>
            <label className="input-group">
                <input type="text" name="donatorEmail" disabled placeholder="Email"  defaultValue={user.email} className="input input-bordered w-full" required />
+           </label>
+        </div>
+        <div className="form-control md:w-1/2 ml-4">
+           <label className="label">
+               <span className="label-text">Food Status</span>
+           </label>
+           <label className="input-group">
+               <input type="text" name="status" placeholder="Food Status" className="input input-bordered w-full" required />
            </label>
         </div>
     </div>

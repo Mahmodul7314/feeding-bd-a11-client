@@ -13,7 +13,7 @@ const Navbar = () => {
   }
 
 
-
+// console.log(user.photoURL)
 	const NavLinks = <>
      <li><NavLink
   to="/"
@@ -89,8 +89,8 @@ My Food Request
   { user?  <>
           <div className="w-20 lg:pt-8 pt-10 flex-wrap"> 
           
-            <div className="lg:pl-10 pl-6"><img className="lg:w-[4rem] w-[2rem] lg:h-[3.5rem] h-[2rem] rounded-full" src={user.photoURL} alt="" /></div>
-          <p className="text-white lg:text-[1rem] pr-6 text-sm pt-3">{user.email}</p>
+            <div className="lg:pl-10 pl-6"><img className="lg:w-[4rem] w-[2rem] lg:h-[3.5rem] h-[2rem] rounded-full" src={user?.photoURL} alt="" /></div>
+          <p className="text-white lg:text-[1rem] pr-6 text-sm pt-3">{user?.email}</p>
             </div>
             <div onClick={handleLogout} className="lg:btn lg:btn-warning rounded-lg"> <NavLink
         to="/"
