@@ -3,6 +3,7 @@
 
 import { useContext } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const AddFood = () => {
@@ -48,7 +49,12 @@ fetch('http://localhost:3000/foods',{
     .then(data=>{
         console.log(data);
         if(data.insertedId){
-            alert('service book successfully')
+            Swal.fire(
+                'Thanks!',
+                'Your Registraion is successful!',
+                navigate("/")
+              
+              )
         }
     })
 

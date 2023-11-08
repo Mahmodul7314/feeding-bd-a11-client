@@ -1,12 +1,16 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
-const SingleFood = ({food}) => {
-  const  {_id,foodName,image,quantity,pickup,date,note,donatorImage,donatorName,foodStatus} = food || {}
+// import SingleFoodShow from "./SingleFoodShow";
+
+
+const SingleFoodAvailable = ({food}) => {
+    const  {_id,foodName,image,quantity,pickup,date,note,donatorImage,donatorName,foodStatus} = food || {}
+
     return (
         <div>
+        <div>
     <div className="card bg-gradient-to-r from-indigo-100 ... shadow-xl">
-        <figure><img src={image} alt="Shoes" /></figure>
+        <figure className=""><img src={image} alt="Shoes" /></figure>
         <div className="card-body">
             <div className="flex justify-between">
             <h2 className="card-title text-xl text-gray-800">{foodName}</h2>
@@ -27,13 +31,14 @@ const SingleFood = ({food}) => {
             </div>
         </div>
             <div className="card-actions flex justify-center">
-            <button className="btn btn-warning">View Details</button>
+            <button onClick=`/detailsfood/${_id}` className="btn btn-warning">View Details</button>
             </div>
         </div>
     </div>
    
 </div>
+        </div>
     );
 };
 
-export default SingleFood;
+export default SingleFoodAvailable;
