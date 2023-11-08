@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useState } from "react";
 import SingleFoodAvailable from "../../Components/Foods/Available/SingleFoodAvailable";
-import ErrorPage from './../ErrorPage/ErrorPage';
+
 
 
 

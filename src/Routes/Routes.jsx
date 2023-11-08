@@ -9,6 +9,8 @@ import MyFoodRequest from "../Pages/MyFoodRequest/MyFoodRequest";
 import Login from "../Components/Login/Login";
 import Register from "../Components/Register/Register";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import FoodDetails from "../Components/FoodDetails/FoodDetails";
+import Request from "../Components/FoodRequest/Request";
 
 
 
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
         },
         {
         path:"/foodrequest",
-        element:<MyFoodRequest></MyFoodRequest>
+        element:<PrivateRoute><MyFoodRequest></MyFoodRequest></PrivateRoute>
         },
         {
           path:"/login",
@@ -45,6 +47,15 @@ const router = createBrowserRouter([
         {
           path:"/register",
           element:<Register></Register>
+        },
+        {
+          path:"/fooddetails/:id",
+          element:<PrivateRoute><FoodDetails></FoodDetails></PrivateRoute>
+        },
+        {
+          path:"/request/:id",
+          element:<PrivateRoute><Request></Request></PrivateRoute>,
+          loader: ({params})=> fetch(`http://localhost:3000/foods/${params.id}`)
         }
       ]
     },

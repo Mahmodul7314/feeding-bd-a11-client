@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 
+import { Link} from "react-router-dom";
+
 // import SingleFoodShow from "./SingleFoodShow";
 
 
@@ -31,7 +33,9 @@ const SingleFoodAvailable = ({food}) => {
             </div>
         </div>
             <div className="card-actions flex justify-center">
-            <button onClick=`/detailsfood/${_id}` className="btn btn-warning">View Details</button>
+            <Link to={`/fooddetails/${_id}`}>
+            <button className="btn btn-warning">View Details</button>
+            </Link>
             </div>
         </div>
     </div>
