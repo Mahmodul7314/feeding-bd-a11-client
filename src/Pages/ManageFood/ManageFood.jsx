@@ -44,8 +44,9 @@ const ManageFood = () => {
             {
                 foods.map(food=><FoodTabular
                      key={food._id} 
-                     food={food}>
-                    handleDelete={handleDelete}
+                     food={food}
+                     handleDelete={handleDelete}
+                     >
                      </FoodTabular>)
             }
         </div>
