@@ -11,7 +11,7 @@ const SingleFoodDetail = ({food}) => {
     <div className="card py-20 max-w-full bg-slate-100 shadow-xl">
     <figure className="lg:max-w-2xl mx-auto" ><img src={image} alt="foodImage" /></figure>
      <div className="card-body text-center space-y-2 text-gray-800">
-        <div className="flex justify-center gap-10 space-y-2 text-center">
+        <div className="flex justify-center items-center gap-10 space-y-2 text-center">
         <h2 className="text-xl">Donator :  {donatorName}</h2>
         <h2 className="text-xl">Pickup Location: {pickup}</h2>
         </div>
