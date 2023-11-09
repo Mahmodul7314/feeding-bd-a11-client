@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const Request = () => {
@@ -57,7 +58,7 @@ const Request = () => {
                 if(data.insertedId){
                     Swal.fire(
                         'Thanks!',
-                        'Your Request Food is successful!',
+                        'Your Food Request is successful!',
                         
                       
                       )
@@ -65,9 +66,6 @@ const Request = () => {
             })
         
         }
-
-    
-   
 
     return (
         <div>
