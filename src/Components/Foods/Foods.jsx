@@ -17,11 +17,6 @@ useEffect(() => {
   }, []);
       
 const sixfood = foods.slice(0,6);
-
-
-
-
-
     return (
         <div className="max-w-7xl px-14 bg-amber-50 py-20">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">

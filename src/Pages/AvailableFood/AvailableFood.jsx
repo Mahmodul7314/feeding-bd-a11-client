@@ -38,7 +38,7 @@ useEffect(() => {
 
     return (
         <div className="px-2">
-            <div className="flex justify-evenly">
+            <div className="flex justify-center">
             <div>
               {/* <button onClick={handleSort}>Sorting near Expire date</button> */}
             </div>

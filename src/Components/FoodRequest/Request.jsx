@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 import { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
@@ -28,7 +27,7 @@ const Request = () => {
         const note = form.note.value;
         const donation = form.donation.value;
         const foodId = form.foodId.value;
-        const foodStatus = form.foodStatus.value;
+
         
         
         
@@ -43,9 +42,7 @@ const Request = () => {
             date,
             note,
             donation,
-            foodId,
-            foodStatus
-        }
+            foodId}
         
         console.log(requestFood);
         fetch('http://localhost:3000/foodsrequest',{

@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const FoodTabular = ({food,handleDelete}) => {
     const  {_id,foodName,image,quantity,pickup,date,note,donatorImage,donatorName,foodStatus} = food || {}
@@ -48,7 +50,7 @@ const FoodTabular = ({food,handleDelete}) => {
         </td>
         <td className="text-green-500">{foodStatus}</td>
         <th className=" flex gap-4">
-          <button className="btn btn-warning btn-xs">Update</button>
+          <Link to={`/update/${_id}`}  className="btn btn-warning btn-xs">Update</Link>
           <button className="btn btn-success btn-xs">Manage Food</button>
         </th>
       </tr>
