@@ -40,13 +40,6 @@ const MyFoodRequest = () => {
         }
       }
 
-
-
-
-
-
-
-
    
     return (
         <div className="py-20  bg-amber-50 px-14">
