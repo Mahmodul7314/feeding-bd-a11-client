@@ -45,7 +45,7 @@ const ManageFood = () => {
           <div className="py-4">
           <table>
         <thead>
-         <tr className="flex lg:gap-[4rem] text-left bg-amber-300 mb-6 py-1">
+         <tr className="flex lg:gap-[4rem] text-left bg-amber-300 mb-5 py-1">
         <th>
        
         </th>
