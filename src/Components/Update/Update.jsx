@@ -61,7 +61,7 @@ console.log(updatefood)
                             title: 'Success!',
                             text: 'Food Updated Successfully',
                             icon: 'success',
-                            confirmButtonText: 'Cool'
+                            confirmButtonText: 'Ok'
                         });
                     } else {
                        
@@ -186,7 +186,7 @@ console.log(updatefood)
         </div>
     </div>
 
-    <input type="submit" value="Add Product" className="btn bg-yellow-500 text-white btn-block" />
+    <input type="submit" value="Update Food" className="btn bg-yellow-500 text-white btn-block" />
        </form>
     
 
