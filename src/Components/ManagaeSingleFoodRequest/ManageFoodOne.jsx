@@ -2,6 +2,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 
+import Swal from "sweetalert2";
+
 
 const ManageFoodOne = ({food}) => {
 const{_id,userEmail,date,foodStatus,userName,userImage}=food;
@@ -18,7 +20,12 @@ const handleDelivered = id =>{
  .then(data =>{
   console.log(data)
   if(data.modifiedCount > 0){
-    alert('status change successfull')
+    Swal.fire(
+      'Yes!',
+      'This Food Status change Delivered successfull!',
+     
+    
+    )
   }
  })
   

@@ -41,15 +41,15 @@ const About = () => {
 			<div className=" items-center justify-center p-4 md:p-8 lg:p-12">
             <section className="py-6 bg-gray-800 text-gray-50">
 	<div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
-		<img src="https://source.unsplash.com/random/301x301/" alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square" />
-		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?0" />
-		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?1" />
-		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?2" />
-		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?3" />
-		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?4" />
-		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?5" />
-		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?6" />
-		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?7" />
+		<img src="https://i.ibb.co/mC1Wwnw/240-F-598764442-e3-X1xyaiv-ASDF8-Ol5-UBf1-HLl-XFlk-CUCN.jpg" alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square" />
+		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/QDhhg2j/istockphoto-1082712040-612x612.jpg" />
+		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/JyGMNTb/pizza-3007395-1280.jpg" />
+		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/smpVHK9/360-F-201745761-Kpkgm-Ki-FR7-DNRw1p9ss3key-Q9g-IQk-L5v.jpg" />
+		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/8PKkyXs/240-F-446113957-v-OQ81k-CVGLiok-P7-Qaa-Bj0w-K8lv-ZX1-Z8-Y.jpg" />
+		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/wsyH7cz/240-F-548294558-lo1gash-FKKa1xy-F48zf-ZFLia-Gk-Tolwwg.jpg" />
+		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/Gs77jF8/beef-khichuri.jpg" />
+		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/yXtXWff/240-F-176970757-REF9-Bp-J3-JC9-Ow41s2-QXm-IGOU5u-Bddt-Hv.jpg" />
+		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/0GSt7j4/Adobe-Stock-294213591-Preview.jpg" />
 		
 	</div>
 </section>

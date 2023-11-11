@@ -2,8 +2,6 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import FoodTabular from "../../Components/FoodTabular/FoodTabular";
 import Swal from "sweetalert2";
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-
 
 const ManageFood = () => {
 

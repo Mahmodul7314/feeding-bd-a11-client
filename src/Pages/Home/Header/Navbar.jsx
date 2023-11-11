@@ -62,7 +62,7 @@ My Food Request
 	</>
     return (
 		<div className=" w-full mx-auto">
-       <div className="navbar bg-gray-800 h-44 ">
+       <div className="navbar bg-[#2B2B2B] h-44 ">
 		<div className="lg:w-4/6 w-2/4">
   <div className="navbar-start">
     <div className="dropdown">

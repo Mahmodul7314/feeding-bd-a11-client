@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <div>
-             <footer className="px-4 divide-y bg-gray-800 text-gray-100">
+             <footer className="px-4 divide-y bg-[#2B2B2B] text-gray-100">
 	<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 	<div className="w-80 pb-4">
    <p className="text-yellow-400 lg:font-bold text-[1.5rem]  break-keep flex items-center">
@@ -13,9 +13,11 @@ const Footer = () => {
 			<div className="space-y-3">
 				<h3 className="tracki uppercase text-gray-50">Product</h3>
 				<ul className="space-y-1">
-					<li>
+				<div className=" text-yellow-400 space-y-2">
+					<li className="">
 						<a rel="noopener noreferrer" href="#">Features</a>
 					</li>
+				
 					<li>
 						<a rel="noopener noreferrer" href="#">Integrations</a>
 					</li>
@@ -25,22 +27,26 @@ const Footer = () => {
 					<li>
 						<a rel="noopener noreferrer" href="#">FAQ</a>
 					</li>
+					</div>
 				</ul>
 			</div>
 			<div className="space-y-3">
 				<h3 className="tracki uppercase text-gray-50">Company</h3>
 				<ul className="space-y-1">
+				<div className=" text-yellow-400 space-y-2">
 					<li>
 						<a rel="noopener noreferrer" href="#">Privacy</a>
 					</li>
 					<li>
 						<a rel="noopener noreferrer" href="#">Terms of Service</a>
 					</li>
+					</div>
 				</ul>
 			</div>
 			<div className="space-y-3">
 				<h3 className="uppercase text-gray-50">Developers</h3>
 				<ul className="space-y-1">
+				<div className=" text-yellow-400 space-y-2">
 					<li>
 						<a rel="noopener noreferrer" href="#">Public API</a>
 					</li>
@@ -50,6 +56,7 @@ const Footer = () => {
 					<li>
 						<a rel="noopener noreferrer" href="#">Guides</a>
 					</li>
+					</div>
 				</ul>
 			</div>
 			<div className="space-y-3">
@@ -74,7 +81,7 @@ const Footer = () => {
 			</div>
 		</div>
 	</div>
-	<div className="py-6 text-sm text-center text-gray-400">© 1968 Company Co. All rights reserved.</div>
+	<div className="w-full bg-[#000000] py-6 text-lg font-bold text-center"><span className="text-white">© 2010 -</span> <span className="text-yellow-400">FeedingBD Company </span> <span className="text-white">All rights reserved.</span></div>
 </footer>
         </div>
     );
