@@ -20,7 +20,15 @@ const MyFoodRequest = () => {
 
 
      const handleDelete= id =>{
-        const proceed = confirm('Are you sure you want to delete')
+        const proceed =confirm(Swal.fire({
+          title: "Are you sure?",
+          text: "You won't be able to revert this!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, delete it!"
+        }))
         if(proceed){
           fetch(`http://localhost:3000/requestFood/${id}`,{
             method:'DELETE'

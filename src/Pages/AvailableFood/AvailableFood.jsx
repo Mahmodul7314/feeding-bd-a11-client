@@ -9,6 +9,7 @@ import SingleFoodAvailable from "../../Components/Foods/Available/SingleFoodAvai
 const AvailableFood = () => {
 
 const [foods, setFoods]= useState([]);
+const [searchText, setSearchText]= useState(" ");
 
 useEffect(() => {
   fetch('http://localhost:3000/foods')
@@ -16,31 +17,41 @@ useEffect(() => {
     .then(data => {
      setFoods(data)
 
+     console.log(searchText)
 
     });
 }, []);
 
 
-// const handleSort =()=>{
- 
-//     fetch('http://localhost:3000/foods')
-//       .then(res => res.json())
-//       .then(data => {
-//         const sortAllData =data.sort((a, b) => a.date - b.date);
-//         setFoods(sortAllData);
-    
-  
-  
-//       });
-//   }
- 
+// var handleSearch =e=>{
+//   e.preventDefault();
+//   const form = e.target;
+//   const searchText = form.search.value;
+//   setSearchText(searchText)
+// }
 
+
+
+//  // Filter foods based on the search text
+//  const filteredFoods = foods.filter((food) =>
+//  food.foodName.toLowerCase().includes(searchText.toLowerCase())
+// );
+// console.log(filteredFoods)
+// setFoods(filteredFoods)
+
+
+
+ 
 
     return (
         <div className="px-2">
-            <div className="flex justify-center">
+            <div className="flex justify-around items-center">
             <div>
-              {/* <button onClick={handleSort}>Sorting near Expire date</button> */}
+            {/* <form onSubmit={handleSearch}>
+              <h2>Filter full food name</h2>
+                    <input className="border-y-gray-300 border-x border-y py-2" type="text" name="search" id="" />
+                    <input type="submit" value="Search" className="btn  bg-yellow-400"/>
+                </form> */}
             </div>
 
            

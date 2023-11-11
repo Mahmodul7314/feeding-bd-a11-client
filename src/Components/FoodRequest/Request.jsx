@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import { useContext } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import Swal from "sweetalert2";
 
@@ -27,8 +27,8 @@ const Request = () => {
         const note = form.note.value;
         const donation = form.donation.value;
         const foodId = form.foodId.value;
-
-        
+        const userName = form.userName.value;
+        const userImage= form.userImage.value;
         
         
         const requestFood ={
@@ -42,7 +42,11 @@ const Request = () => {
             date,
             note,
             donation,
-            foodId}
+            foodId,
+            foodStatus,
+            userName,
+            userImage
+        }
         
         console.log(requestFood);
         fetch('http://localhost:3000/foodsrequest',{
@@ -59,7 +63,7 @@ const Request = () => {
                     Swal.fire(
                         'Thanks!',
                         'Your Food Request is successful!',
-                        
+                      
                       
                       )
                 }
@@ -185,6 +189,24 @@ const Request = () => {
            </label>
            <label className="input-group">
                <input type="text" name="foodStatus" placeholder="Food Status" defaultValue={foodStatus} disabled className="input input-bordered w-full" required />
+           </label>
+          </div>
+    </div>
+    <div className="pb-8 md:flex">
+    <div className="form-control md:w-1/2">
+       <label className="label">
+               <span className="label-text">User Image</span>
+           </label>
+           <label className="input-group">
+               <input type="text" name="userImage" placeholder="User Image" defaultValue={user.photoURL} disabled className="input input-bordered w-full" required />
+           </label>
+          </div>
+    <div className="form-control md:w-1/2 ml-4">
+       <label className="label">
+               <span className="label-text">User Name</span>
+           </label>
+           <label className="input-group">
+               <input type="text" name="userName" placeholder="User Name" defaultValue={user.displayName} disabled className="input input-bordered w-full" required />
            </label>
           </div>
     </div>

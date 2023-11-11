@@ -12,6 +12,8 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import FoodDetails from "../Components/FoodDetails/FoodDetails";
 import Request from "../Components/FoodRequest/Request";
 import Update from "../Components/Update/Update";
+import ManageISingleFood from "../Components/ManagaeSingleFoodRequest/ManageISingleFood";
+import ManageFoodOne from "../Components/ManagaeSingleFoodRequest/ManageFoodOne";
 
 
 
@@ -60,10 +62,20 @@ const router = createBrowserRouter([
         },
         {
           path:"/update/:id",
-          element:<Update></Update>,
+          element:<PrivateRoute><Update></Update></PrivateRoute>,
           loader: ({params})=> fetch(`http://localhost:3000/foods/${params.id}`)
 
+        },
+        {
+          path:"/managesinglefood/:id",
+          element:<PrivateRoute><ManageISingleFood></ManageISingleFood></PrivateRoute>,
+          loader: ({params})=> fetch(`http://localhost:3000/requestFood/${params.id}`)
+        },
+        {
+          path:"/managefoodOne",
+          element:<PrivateRoute><ManageFoodOne></ManageFoodOne></PrivateRoute>
         }
+
       ]
     },
   ]);

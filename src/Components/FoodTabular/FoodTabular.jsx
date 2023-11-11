@@ -41,7 +41,7 @@ const FoodTabular = ({food,handleDelete}) => {
         <td className="text-green-500 ">{foodStatus}</td>
         <th className=" flex gap-12 ">
           <Link to={`/update/${_id}`}  className="btn btn-warning btn-xs">Update</Link>
-          <button className="btn btn-success btn-xs">Manage Food</button>
+          <Link to={`/managesinglefood/${_id}`}><button className="btn btn-success btn-xs">Manage Food</button></Link>
         </th>
       </tr>
     </tbody>
