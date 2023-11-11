@@ -27,7 +27,7 @@ const sixfood = foods.slice(0,6);
             }
         </div>
         <div className=" pt-14 pb-10 flex justify-center">
-        <Link to="/availablefood" className="btn bg-gray-300 shadow-xl">Show All</Link>
+        <Link to="/availablefood" className="btn bg-yellow-500 shadow-xl">Show All</Link>
         </div>
         </div>
     );
