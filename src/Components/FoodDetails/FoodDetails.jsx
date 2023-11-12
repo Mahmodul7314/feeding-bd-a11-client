@@ -10,7 +10,7 @@ const FoodDetails = () => {
   const _id = id;
   
   useEffect(() => {
-    fetch(`http://localhost:3000/foods/${_id}`)
+    fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods/${_id}`)
       .then(res => res.json())
       .then(data => {
         setSingleFood(data);

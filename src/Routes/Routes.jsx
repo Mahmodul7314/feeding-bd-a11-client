@@ -59,18 +59,18 @@ const router = createBrowserRouter([
         {
           path:"/request/:id",
           element:<PrivateRoute><Request></Request></PrivateRoute>,
-          loader: ({params})=> fetch(`http://localhost:3000/foods/${params.id}`)
+          loader: ({params})=> fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods/${params.id}`)
         },
         {
           path:"/update/:id",
           element:<PrivateRoute><Update></Update></PrivateRoute>,
-          loader: ({params})=> fetch(`http://localhost:3000/foods/${params.id}`)
+          loader: ({params})=> fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods/${params.id}`)
 
         },
         {
           path:"/managesinglefood/:id",
           element:<PrivateRoute><ManageISingleFood></ManageISingleFood></PrivateRoute>,
-          loader: ({params})=> fetch(`http://localhost:3000/requestFood/${params.id}`)
+          loader: ({params})=> fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/requestFood/${params.id}`)
         },
         {
           path:"/managefoodOne",

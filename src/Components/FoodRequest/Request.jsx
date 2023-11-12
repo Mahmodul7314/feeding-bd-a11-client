@@ -49,7 +49,7 @@ const Request = () => {
         }
         
         console.log(requestFood);
-        fetch('http://localhost:3000/foodsrequest',{
+        fetch('https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foodsrequest',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'

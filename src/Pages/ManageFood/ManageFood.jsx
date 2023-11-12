@@ -8,7 +8,7 @@ const ManageFood = () => {
     const {user} = useContext(AuthContext);
     const [foods, setFoods] = useState([]);
 
-    const url = `http://localhost:3000/foods?email=${user.email}`;
+    const url = `https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods?email=${user.email}`;
      useEffect(()=>{
         fetch(url)
         .then(res => res.json())
@@ -21,7 +21,7 @@ const ManageFood = () => {
      const handleDelete= id =>{
         const proceed = confirm('Are you sure you want to delete')
         if(proceed){
-          fetch(`http://localhost:3000/foods/${id}`,{
+          fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods/${id}`,{
             method:'DELETE'
           })
               .then(res => res.json())

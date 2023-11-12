@@ -8,7 +8,7 @@ const MyFoodRequest = () => {
     const{user} = useContext(AuthContext)
 
     const [foods, setFoods] = useState([]);
-    const url = `http://localhost:3000/requestFood?email=${user.email}`;
+    const url = `https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/requestFood?email=${user.email}`;
      useEffect(()=>{
         fetch(url)
         .then(res => res.json())
@@ -30,7 +30,7 @@ const MyFoodRequest = () => {
           confirmButtonText: "Yes, delete it!"
         }))
         if(proceed){
-          fetch(`http://localhost:3000/requestFood/${id}`,{
+          fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/requestFood/${id}`,{
             method:'DELETE'
           })
               .then(res => res.json())

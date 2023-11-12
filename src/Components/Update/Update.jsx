@@ -42,7 +42,7 @@ const Update = () => {
             donatorEmail}
 console.log(updatefood)
 
-            fetch(`http://localhost:3000/foods/${_id}`, {
+            fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods/${_id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

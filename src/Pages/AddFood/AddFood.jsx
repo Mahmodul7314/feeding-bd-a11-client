@@ -39,7 +39,7 @@ const food ={foodName,
     donatorEmail}
 
 console.log(food);
-fetch('http://localhost:3000/foods',{
+fetch('https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods',{
     method:'POST',
     headers:{
         'content-type': 'application/json'

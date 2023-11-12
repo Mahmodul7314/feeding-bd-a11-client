@@ -8,7 +8,7 @@ const Foods = () => {
 const [foods, setFoods] = useState([]);
 
 useEffect(() => {
-    fetch('http://localhost:3000/foods')
+    fetch('https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods')
       .then(res => res.json())
       .then(data => {
         const sortAllData =data.sort((a, b) => b.quantity - a.quantity);
