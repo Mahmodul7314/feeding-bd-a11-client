@@ -10,9 +10,9 @@ import { Helmet } from "react-helmet";
 const AvailableFood = () => {
 
 const [foods, setFoods]= useState([]);
-
+console.log(foods)
 useEffect(() => {
-  fetch('https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods')
+  fetch('https://feeding-bd-server.vercel.app/foods')
     .then(res => res.json())
     .then(data => {
      setFoods(data)

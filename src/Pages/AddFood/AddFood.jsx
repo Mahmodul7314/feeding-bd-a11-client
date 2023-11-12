@@ -31,7 +31,7 @@ const food ={foodName,
     image,
     quantity,
     pickup,
-    date,
+    date, 
     note,
     status,
     donatorImage,
@@ -39,7 +39,7 @@ const food ={foodName,
     donatorEmail}
 
 console.log(food);
-fetch('https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods',{
+fetch('https://feeding-bd-server.vercel.app/foods',{
     method:'POST',
     headers:{
         'content-type': 'application/json'

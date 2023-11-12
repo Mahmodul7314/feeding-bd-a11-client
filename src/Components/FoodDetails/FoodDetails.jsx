@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SingleFoodDetail from "./SingleFoodDetail";
@@ -10,7 +11,7 @@ const FoodDetails = () => {
   const _id = id;
   
   useEffect(() => {
-    fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/foods/${_id}`)
+    fetch(`https://feeding-bd-server.vercel.app/foods/${_id}`)
       .then(res => res.json())
       .then(data => {
         setSingleFood(data);

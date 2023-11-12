@@ -9,7 +9,7 @@ const ManageFoodOne = ({food}) => {
 const{_id,userEmail,date,foodStatus,userName,userImage}=food;
 
 const handleDelivered = id =>{
-  fetch(`https://feeding-bd-server-pdv6m0ql4-mahmudul-hasans-projects-831adccd.vercel.app/requestFood/${id}`,{
+  fetch(`https://feeding-bd-server.vercel.app/requestFood/${id}`,{
    method:'PATCH',
    headers:{
      'content-type': 'application/json'
