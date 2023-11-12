@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section className="bg-gray-800 text-gray-100 pt-14 mb-10">
+        <section className="bg-gray-600 text-gray-100 pt-14 mb-10">
             <h2 className=' flex justify-center text-white font bold text-4xl pb-8'>About Us</h2>
 	<div className="container flex flex-col-reverse mx-auto lg:flex-row">
 		<div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 bg-violet-400 text-gray-900">
@@ -37,9 +37,9 @@ const About = () => {
 				</div>
 			</div>
 		</div>
-		<div className="lg:w-1/2 xl:w-3/5  bg-gray-800">
+		<div className="lg:w-1/2 xl:w-3/5  bg-gray-600">
 			<div className=" items-center justify-center p-4 md:p-8 lg:p-12">
-            <section className="py-6 bg-gray-800 text-gray-50">
+            <section className="py-6 bg-gray-600 text-gray-50">
 	<div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
 		<img src="https://i.ibb.co/mC1Wwnw/240-F-598764442-e3-X1xyaiv-ASDF8-Ol5-UBf1-HLl-XFlk-CUCN.jpg" alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 bg-gray-500 aspect-square" />
 		<img alt="" className="w-full h-full rounded shadow-sm min-h-48 bg-gray-500 aspect-square" src="https://i.ibb.co/QDhhg2j/istockphoto-1082712040-612x612.jpg" />

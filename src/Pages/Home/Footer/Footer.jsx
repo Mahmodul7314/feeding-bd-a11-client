@@ -81,7 +81,7 @@ const Footer = () => {
 			</div>
 		</div>
 	</div>
-	<div className="w-full bg-[#000000] py-6 lg:text-lg text-xs font-normal lg:font-bold text-center"><span className="text-white">© 2010 -</span> <span className="text-yellow-400">FeedingBD Company </span> <span className="text-white">All rights reserved.</span></div>
+	<div className="w-full bg-gray-800 py-6 lg:text-lg text-xs font-normal lg:font-bold text-center"><span className="text-white">© 2010 -</span> <span className="text-yellow-400">FeedingBD Company </span> <span className="text-white">All rights reserved.</span></div>
 </footer>
         </div>
     );

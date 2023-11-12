@@ -9,7 +9,6 @@ import SingleFoodAvailable from "../../Components/Foods/Available/SingleFoodAvai
 const AvailableFood = () => {
 
 const [foods, setFoods]= useState([]);
-const [searchText, setSearchText]= useState(" ");
 
 useEffect(() => {
   fetch('http://localhost:3000/foods')
@@ -17,10 +16,22 @@ useEffect(() => {
     .then(data => {
      setFoods(data)
 
-     console.log(searchText)
-
     });
 }, []);
+
+// const handleSort=(foods)=>{
+// const allFoods = foods;
+// allFoods.map(food=>{
+//   const dateString= food.date
+//   const dateObject = new Date(dateString);
+//    const numericDate = dateObject.getTime();
+
+//    const sortAllData =allFoods.sort((a, b) => b.numericDate - a.numericDate);
+// //  setFoods(sortAllData);
+// console.log(sortAllData)
+
+// })
+
 
 
 // var handleSearch =e=>{
@@ -45,13 +56,13 @@ useEffect(() => {
 
     return (
         <div className="px-2">
-            <div className="flex justify-around items-center">
+            <div className="flex justify-center items-center">
             <div>
-            {/* <form onSubmit={handleSearch}>
-              <h2>Filter full food name</h2>
-                    <input className="border-y-gray-300 border-x border-y py-2" type="text" name="search" id="" />
-                    <input type="submit" value="Search" className="btn  bg-yellow-400"/>
-                </form> */}
+
+              <div>
+                {/* <button className="btn btn-primary" onClick={()=>handleSort(foods)}>Sorting ood</button> */}
+              </div>
+        
             </div>
 
            
