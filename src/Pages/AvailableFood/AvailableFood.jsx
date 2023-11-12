@@ -2,6 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 import { useEffect, useState } from "react";
 import SingleFoodAvailable from "../../Components/Foods/Available/SingleFoodAvailable";
+import { Helmet } from "react-helmet";
 
 
 
@@ -56,6 +57,7 @@ useEffect(() => {
 
     return (
         <div className="px-2">
+          <Helmet>{AvailableFood}</Helmet>
             <div className="flex justify-center items-center">
             <div>
 

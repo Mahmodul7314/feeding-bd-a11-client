@@ -1,13 +1,16 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 
 const SingleFoodDetail = ({food}) => {
     const  {_id,foodName,image,quantity,pickup,date,note,donatorImage,donatorName,foodStatus} = food || {}
     return (
+        
         <div>
+         
     <div className="card py-20 max-w-full bg-slate-100 shadow-xl">
     <figure className="lg:max-w-2xl mx-auto" ><img src={image} alt="foodImage" /></figure>
      <div className="card-body text-center space-y-2 text-gray-800">

@@ -4,6 +4,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const AddFood = () => {
@@ -58,11 +59,7 @@ fetch('http://localhost:3000/foods',{
         }
     })
 
-
-
 }
-
-
     return (
         <div className="lg:my-20 my-6 lg:px-8 px-2">
         <form onSubmit={handleAddFood}>
@@ -171,6 +168,7 @@ fetch('http://localhost:3000/foods',{
     
 
    </div>
+
     );
 };
 

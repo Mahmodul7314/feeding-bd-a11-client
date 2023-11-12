@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import SingleFoodDetail from "./SingleFoodDetail";
+import { Helmet } from "react-helmet";
 
 const FoodDetails = () => {
+
   const [singleFood, setSingleFood] = useState(null);
   const { id } = useParams();
   const _id = id;
