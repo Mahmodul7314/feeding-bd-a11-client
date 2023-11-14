@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { useLoaderData} from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import Swal from "sweetalert2";
-
+import { Helmet } from "react-helmet";
 const Update = () => {
 
 
@@ -85,6 +85,7 @@ console.log(updatefood)
         }
     return (
         <div className="lg:my-20 my-6 lg:px-8 px-2">
+            <Helmet><title>Feeding BD | Manage Foods |update</title></Helmet>
         <form onSubmit={handleUpdate}>
            {/* form Name and Image row */}
            <div className="md:flex mb-8">

@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import Swal from "sweetalert2";
-
+import { Helmet } from "react-helmet";
 
 const Request = () => {
     const foodInfo = useLoaderData();
@@ -73,6 +73,7 @@ const Request = () => {
 
     return (
         <div>
+            <Helmet><title>Feeding BD | Food Details | Request</title></Helmet>
       <div className="lg:my-20 my-6 lg:px-8 px-2">
         <form onSubmit={handleRequest} >
            {/* form food Name and Image row */}

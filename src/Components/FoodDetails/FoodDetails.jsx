@@ -23,6 +23,7 @@ const FoodDetails = () => {
 
   return (
     <div>
+      <Helmet><title>Feeding BD|Food Details</title></Helmet>
         {
             <SingleFoodDetail food={singleFood}></SingleFoodDetail>
         }
