@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import Swal from "sweetalert2";
-
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -60,12 +60,9 @@ const handleLogin = e =>{
         } )
       }
    
-
-
-    
-
     return (
         <div className="py-10">
+            <Helmet><title>Feeding BD | Login</title></Helmet>
             <div className="w-full mx-auto max-w-md p-8 space-y-3 rounded-xl bg-gray-900 text-gray-100">
 	<h1 className="text-2xl font-bold text-center">Login</h1>
 	<form onSubmit={handleLogin} className="space-y-6">

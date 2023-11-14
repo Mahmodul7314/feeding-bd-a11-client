@@ -57,7 +57,7 @@ useEffect(() => {
 
     return (
         <div className="px-2">
-          <Helmet>{AvailableFood}</Helmet>
+          <Helmet><title>Feeding BD | Available Foods</title></Helmet>
             <div className="flex justify-center items-center">
             <div>
 

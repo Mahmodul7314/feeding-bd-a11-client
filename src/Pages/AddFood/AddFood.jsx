@@ -4,7 +4,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import Swal from "sweetalert2";
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 
 
 const AddFood = () => {
@@ -61,6 +61,10 @@ fetch('https://feeding-bd-server.vercel.app/foods',{
 
 }
     return (
+        <>
+        <Helmet>
+            <title>Feeding BD | Add Food</title>
+        </Helmet>
         <div className="lg:my-20 my-6 lg:px-8 px-2">
         <form onSubmit={handleAddFood}>
            {/* form Name and Image row */}
@@ -168,7 +172,7 @@ fetch('https://feeding-bd-server.vercel.app/foods',{
     
 
    </div>
-
+   </>
     );
 };
 

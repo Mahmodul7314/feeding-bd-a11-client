@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import FoodTabular from "../../Components/FoodTabular/FoodTabular";
 import Swal from "sweetalert2";
-
+import { Helmet } from 'react-helmet-async';
 const ManageFood = () => {
 
     const {user} = useContext(AuthContext);
@@ -40,6 +40,7 @@ const ManageFood = () => {
       }
     return (
         <div className="px-24 bg-amber-50 py-10">
+          <Helmet><title>Feeding BD | Manage Foods</title></Helmet>
           <div className="py-4">
           <table>
         <thead>

@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Firebase/AuthProvider";
 import SingleFoodRequest from "../../Components/SingleFoodRequest/SingleFoodRequest";
 import Swal from "sweetalert2";
-
+import { Helmet } from 'react-helmet-async';
 
 const MyFoodRequest = () => {
     const{user} = useContext(AuthContext)
@@ -51,6 +51,7 @@ const MyFoodRequest = () => {
    
     return (
         <div className="py-20  bg-amber-50 px-14">
+          <Helmet><title>Feeding BD | My Food Request</title></Helmet>
             <div className="grid lg:grid-cols-3 gap-8 md:grid-cols-2 grid-cols-1">
             {
                 foods.map(food=><SingleFoodRequest handleDelete={handleDelete} key={food._id} food={food} ></SingleFoodRequest>)

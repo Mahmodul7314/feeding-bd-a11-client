@@ -6,7 +6,7 @@ import Review from "../../Components/Review/Review";
 const Home = () => {
     return (
         <div className="bg-[#FFFFFF]">
-            <Helmet>{Home}</Helmet>
+            <Helmet><title>Feeding BD</title></Helmet>
           
             <Banner></Banner>
             <Foods></Foods>
