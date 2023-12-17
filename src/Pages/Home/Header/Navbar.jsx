@@ -75,7 +75,7 @@ My Food Request
     </div>
    <div className="lg:w-80 w-72 pb-4">
    <p className="text-yellow-400 lg:font-bold text-[1.5rem]  break-keep flex items-center">
-	<img className="lg:w-[5rem] w-[2rem] md:w-[3rem] h-[2rem] md:h-[3rem] lg:h-[5rem]" src="https://i.ibb.co/c3Yb1ys/6039575.png" alt="" /><span className="text-red-400 pl-6 text-3xl">F</span>eeding BD</p>
+	<img className="lg:w-[8rem] w-[4rem] md:w-[5rem] h-[4rem] md:h-[5rem] lg:h-[8rem]" src="https://i.ibb.co/yy1bT3m/wepik-gradient-professional-non-profit-organization-brand-logo-20231217083152-Qt9-C.png" alt="" /><span className="text-red-400 pl-0 text-3xl">U</span>nity Food</p>
    </div>
   </div>
   <div className="navbar-center hidden lg:flex">

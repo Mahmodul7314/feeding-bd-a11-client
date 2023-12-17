@@ -7,7 +7,7 @@ const Footer = () => {
 	<div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
 	<div className="w-80 pb-4">
    <p className="text-yellow-400 lg:font-bold text-[1.5rem]  break-keep flex items-center">
-	<img className="lg:w-[5rem] w-[2rem] h-[2rem]  lg:h-[5rem]" src="https://i.ibb.co/c3Yb1ys/6039575.png" alt="" /><span className="text-red-400 pl-6 text-3xl">F</span>eeding BD</p>
+	<img className="lg:w-[8rem] w-[3rem] h-[3rem]  lg:h-[8rem]" src="https://i.ibb.co/yy1bT3m/wepik-gradient-professional-non-profit-organization-brand-logo-20231217083152-Qt9-C.png" alt="" /><span className="text-red-400 pl-0 text-3xl">U</span>nity Food</p>
    </div>
 		<div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
 			<div className="space-y-3">
